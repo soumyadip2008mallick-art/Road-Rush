@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Rush - Car Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>🏎️ ROAD RUSH</h1>
+            <p>Survive the traffic and get the highest score!</p>
+        </header>
+
+        <div class="game-info">
+            <div>
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div>
+                <span>Best</span>
+                <strong id="highScore">0</strong>
+            </div>
+        </div>
+
+        <div class="game-area">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="startScreen" class="screen">
+                <h2>ROAD RUSH</h2>
+                <p>Ready to race?</p>
+                <button id="startButton">START GAME</button>
+            </div>
+
+            <div id="gameOverScreen" class="screen hidden">
+                <h2>GAME OVER</h2>
+
+                <p>Your Score</p>
+                <strong id="finalScore">0</strong>
+
+                <button id="restartButton">PLAY AGAIN</button>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="leftButton">⬅</button>
+            <button id="rightButton">➡</button>
+        </div>
+
+        <div class="instructions">
+            <p>Keyboard: <b>←</b> <b>→</b></p>
+            <p>Mobile: Use the buttons</p>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
